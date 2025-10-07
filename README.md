@@ -1,7 +1,1 @@
-{
-  "type": "about:blank",
-  "title": "Bad Request",
-  "status": 400,
-  "detail": "[]: required key [name] not found",
-  "instance": "https://developer.fr.world.socgen/docs/apis/reference/guidelines/technical.html#use-client-error-codes-correctly"
-}
+<400,{"timestamp":"2025-10-07T16:26:18.282+00:00","status":400,"error":"Bad Request","path":"/api/v3/workspaces/67526dd7-87db-4fe4-ba2c-04b754c1748e/documents/335f8356-6f47-40e4-a0c4-4652257cce3a/contents"},{Date=[Tue, 07 Oct 2025 16:26:18 GMT], Content-Type=[application/json; charset=utf-8], Transfer-Encoding=[chunked], Connection=[keep-alive], Access-Control-Allow-Origin=[*], X-DNS-Prefetch-Control=[off], x-frame-options=[DENY], strict-transport-security=[max-age=31536000; includeSubDomains], X-Download-Options=[noopen], x-content-type-options=[nosniff], x-xss-protection=[0], vary=[Origin, Access-Control-Request-Method, Access-Control-Request-Headers], cache-control=[no-cache, no-store, max-age=0, must-revalidate], pragma=[no-cache], expires=[0], trace-id=[d11d263db6cf72a54b6ad33b4abece26]}>
