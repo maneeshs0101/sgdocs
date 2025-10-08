@@ -1,21 +1,13 @@
+AsyncHttpClient client = new DefaultAsyncHttpClient();
+client.prepare("POST", "https://api.sgdocs.dev.euw.gbis.sg-azure.com/api/v3/workspaces/2467dfb1-b9d2-4236-bda0-1682d6263f2b/documents/e0779bf4-1be8-46c6-a4a5-c61c218def99/contents")
+  .setHeader("authorization", "Bearer token")
+  .setHeader("content-type", "application/pdf")
+  .setHeader("content-length", "154158")
+  .setHeader("content-disposition", "binary;filename=A407925050188327.pdf")
+  .setBody("C:\\Users\\mshivapr022725\\OneDrive - GROUP DIGITAL WORKPLACE\\Documents\\A407925050188327.pdf")
+  .execute()
+  .toCompletableFuture()
+  .thenAccept(System.out::println)
+  .join();
 
-{
-  "modelId" : "a7afcaef-40ef-4a99-829d-fc4d45fb3073",
-  "metadata" : {
-    "name" : "A407922120128336.pdf",
-    "client_ID" : "075070072011",
-    "client_BIC" : "BCITITMMXXX",
-    "ref_document" : "A407922120128336.pdf",
-    "ref_document_maitre" : "A407922120128336.pdf",
-    "title" : "Facture Standard",
-    "author" : "Nickel",
-    "mois_facture" : "01",
-    "annee_facture" : "2023",
-    "type_fact" : "FC",
-    "mode_paiement" : "CA",
-    "nb_pages" : 1,
-    "tags" : "0699000101720119,0699000201720119,BCITITMMXXX"
-  },
-  "destroyDate" : "2035-10-07",
-  "confidentialityLevel" : "C2"
-}
+client.close();
